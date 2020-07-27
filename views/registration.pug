@@ -1,0 +1,62 @@
+extends layout
+block content
+    .col-md-8.offset-md-2
+        form.needs_validation(action="/registration/register" method="POST")
+            div.form-row
+                div.col-md-6.mb-3
+                    label(for="validationTooltip01") First name
+                    input.form-control#validationTooltip01(type="text" name="firstname" required="required")
+                    div.valid-tooltip 
+                        | Looks good!                                               
+                div.col-md-6.mb-3
+                    label(for="validationTooltip02") Last name
+                    input.form-control#validationTooltip02(type="text" name="lastname" required)
+                    div.valid-tooltip
+                        | Looks good!
+            div.form-row
+                div.col-md-6.mb-3
+                    label(for="validationTooltip01") ID
+                    input.form-control#validationTooltip01(type="text" name="id" required="required")
+                    div.valid-tooltip 
+                        | Looks good!                                               
+                div.col-md-6.mb-3
+                    label(for="validationTooltip02") Email
+                    input.form-control#validationTooltip02(type="text" name="email" required)
+                    div.valid-tooltip
+                        | Looks good!           
+                            
+            div.form-row
+                div.col-md-6.mb-3
+                    label(for="validationTooltip03") City
+                    input.form-control#validationTooltip03(type="text" name="city" required)
+                    div.invalid-tooltip
+                        | Please provide a valid city.
+                            
+                div.col-md-3.mb-3
+                    label(for="validationTooltip04") State
+                    select.custom-select#validationTooltip04(name="state" required)
+                        option(selected disabled value="") select
+                        option( value="america") america
+                        option( value="nigeria") nigeria
+                               
+                    div.invalid-tooltip
+                        | Please select a valid state.
+                                
+                            
+                div.col-md-3.mb-3
+                    label(for="validationTooltip05") Zip
+                    input.form-control#validationTooltip05(type="text" name="zip" required)
+                    div.invalid-tooltip
+                        | Please provide a valid zip.
+                                
+                button.btn.btn-primary(type="submit") Submit form
+                
+
+   
+   
+   
+
+
+    
+
+  

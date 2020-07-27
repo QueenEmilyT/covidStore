@@ -1,0 +1,14 @@
+extends layout
+block content
+    .col-md-6.offset-md-3
+        form(action="/manager/managerLogIn" method="POST")
+            div.form-group
+                label(for=exampleInputEmail1) Email address
+                input.form-control#exampleInputEmail1(type="email" name="email" aria-describedby="emailHelp")
+                small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+            div.form-group
+                label(for="exampleInputPassword1") Password
+                input.form-control.exampleInputPassword1(type="password" name="password")
+            button.btn.btn-primary(type="submit") Submit
+            
+             

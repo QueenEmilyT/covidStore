@@ -1,0 +1,29 @@
+.carousel.slide.img {
+    height: 70vh;
+}
+
+.product-card.card:hover {
+    opacity: .85;
+}
+
+@media (min-width: 860px) {
+    .product-card.card {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-card.card {
+        width: 22rem;
+    }
+}
+
+body {
+    background-color: linen;
+    text-align: center;
+}
+
+h1 {
+    color: maroon;
+    text-align: center;
+}

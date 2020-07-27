@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/bootstrap/css/covid.css")
+        title= title
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.py-5
+            a.navbar-brand(href="#") Navbar
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+    
+            ul.navbar-nav.mr-auto
+                li.nav-item
+                    a.i.fa.fa-facebook.nav-link(href="#") 
+                li.nav-item
+                    a.i.fa.fa-instagram.nav-link(href="#")
+                li.nav-item
+                    a.i.fa.fa-twitter.nav-link(href="#")
+            div.collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.ml-auto(style="margin-top: -50px")
+
+                    <!-- Trying to format the navbar-->
+                    li.nav-item.active
+                        form.form-inline.d-flex.nav-link.my-2.my-lg-0
+                            input.form-control(type="search" placeholder="Search" aria-label="Search")
+                            div.input-group-append
+                                button.btn.btn-outline-success#button-addon2.i.fa.fa-search(type="submit")
+                        
+                a.i.fa.fa-facebooknav-link(href="#")
+            li.nav-item
+                a.i.fa.fa-instagram.nav-link(href="#") 
+            li.nav-item
+                a.i.fa.fa-twitter.nav-link(href="#") 
+        
+                    li.nav-item
+                        a.nav-link(href="#") Active
+                
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                
+                    li.nav-item
+                        a.nav-link(href="#") Active
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                    li.nav-item
+                        a.nav-link(href="#") Link
+        //-the main body starts here
+        .container-fluid
+            .row
+                block content
+
+
+
+
+
+    script(src="bootstrap/js/jquery-3.5.1.slim.min.js")  
+    script(src="bootstrap/js/bootstrap.min.js") 
+    script(src="https://use.fontawesome.com/ce9e55dfdb.js")  
+               
+                
+
+   
+   
+   
+
+
+   
+
+  

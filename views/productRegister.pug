@@ -1,0 +1,44 @@
+extends layout
+Block content  
+
+
+    form(action="/product" method="POST")
+        div.form-row
+            div.form-group.col-md-6
+            label(for="inputEmail4") Email
+            input.form-control#inputEmail4(type="email")
+            
+            div.form-group.col-md-6
+            label(for="inputPassword4") Password
+            input.form-control#inputPassword4(type="password")
+        
+        div.form-group
+            label(for="inputAddress") Address
+            input.form-control#inputAddress(type="text" placeholder="1234 Main St")
+        
+        div.form-group
+            label(for="inputAddress2") Address 2
+            input.form-control#inputAddress2(type="text"" placeholder="Apartment, studio, or floor")
+        
+        div.form-row
+            div.form-group.col-md-6
+            label(for="inputCity") City
+            input.form-control#inputCity(type="text") 
+            
+            div.form-group.col-md-4
+            label(for="inputState") State
+            select.form-control#inputState
+                option(selected) Choose
+                    
+            div.form-group.col-md-2
+            label(for="inputZip") Zip
+            input.form-control#inputZip(type="text") 
+            
+        div.form-group
+            div.form-check
+            input.form-check-input#gridCheck(type="checkbox")
+            label.form-check-label(for="gridCheck")
+                Check me out
+        
+        button.btn.btn-primary(type="submit") Sign in
+        

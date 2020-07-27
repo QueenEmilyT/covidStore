@@ -1,0 +1,197 @@
+doctype html 
+html(lang="en")
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        //-CSS only 
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+        script(src="https://use.fontawesome.com/ce9e55dfdb.js")
+        title= Document
+    
+            //- .carousel.slide.img {
+            //-     height: 70vh;
+            //- }
+            
+            //- .product-card.card: hover{
+            //-     opacity: .85;
+            //- }
+            
+            //- @media (min-width: 860px) {
+            //-     .product-card.card {
+            //-         width: 18rem;
+            //-     }
+            //- }
+            
+            //- @media (min-width: 1200px) {
+            //-     .product-card.card {
+            //-         width: 22rem;
+            //-     }
+            //- }
+            
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.py-5
+            a.navbar-brand(href="#") Navbar
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        
+            ul.navbar-nav.mr-auto
+                li.nav-item
+                    a.i.fa.fa-facebook.nav-link(href="#") 
+                li.nav-item
+                    a.i.fa.fa-instagram.nav-link(href="#")
+                li.nav-item
+                    a.i.fa.fa-twitter.nav-link(href="#")
+            div.collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.ml-auto(style="margin-top: -50px")
+
+                    <!-- Trying to format the navbar-->
+                    li.nav-item.active
+                        form.form-inline.d-flex.nav-link.my-2.my-lg-0
+                            input.form-control(type="search" placeholder="Search" aria-label="Search")
+                            div.input-group-append
+                                button.btn.btn-outline-success#button-addon2.i.fa.fa-search(type="submit")
+                        
+                    //- <!-- <li class="nav-item">
+                a.i.fa.fa-facebooknav-link(href="#")
+            li.nav-item
+                a.i.fa.fa-instagram.nav-link(href="#") 
+            li.nav-item
+                a.i.fa.fa-twitter.nav-link(href="#") 
+        
+                    li.nav-item
+                        a.nav-link(href="#") Active
+                
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                
+                    li.nav-item
+                        a.nav-link(href="#") Active
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                    li.nav-item
+                        a.nav-link(href="#") Link
+                
+    
+
+        //- <!-- Carousel -->
+        //- <!-- change navbar is spanning beyod the view port -->
+        div.container-fluid(style="margin: 0 0 0 -4px; padding: 0 0 0 4px; overflow-x: hidden;")
+            div.row
+                div.col-md-12
+                    div.carousel.slide#carouselExampleSlidesOnly(data-ride="carousel")
+                        div.carousel-inner.bg-dark
+                            div.carousel-item.active
+                                img.d-block.w-100(src="https://images.unsplash.com/photo-1554227231-54aa5db01c51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="First slide")
+                            
+                            div.carousel-item
+                                img.d-block.w-100(src="https://images.unsplash.com/photo-1564260508434-ba6958a4c468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Second slide")
+                        
+                            div.carousel-item
+                                img.d-block.w-100(src="https://images.unsplash.com/photo-1495841020177-1919ede29bd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Third slide")           
+                    
+                    //- Main div 
+
+        div.container
+            div.row
+                //- sidebar
+                div.col-md-4
+                    div.row
+                        div.col-md-12.py-5
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae modi ab cumque corrupti inventore provident assumenda nisi, voluptatem eligendi libero enim atque odit. Quisquam, aliquam. Quibusdam excepturi vero harum.
+                        
+                        div.col-md-12.py-5
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae modi ab cumque corrupti inventore provident assumenda nisi, voluptatem eligendi libero enim atque odit. Quisquam, aliquam. Quibusdam excepturi vero harum.
+                    
+                //- <!-- product section -->
+                div.col-md-8.product-card
+                    div.row
+                        h5.pt-3.pb-5 Lewis is Southern Africa's single largest furniture brand which sells a range of household furniture, electrical appliances and home electronics.
+                        div.col-md-12.col-lg-6.mb-4
+                            div(style="margin: 0 3px;")
+                                div.card
+                                    img.card-img-top(style="height: 17rem;" src="https://images.unsplash.com/photo-1586378803006-a1914f40e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap")
+                                    div.card-body
+                                        h5.card-title Card title
+                                        a.btn.btn-primary(href="#") BUY 
+                                        p Provided by queen services
+                                    
+                        div.col-md-12.col-lg-6.mb-4
+                            div(style="margin: 0 3px;")
+                                div.card
+                                    img.card-img-top(style="height: 17rem;" src="https://images.unsplash.com/photo-1586378803006-a1914f40e036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap")
+                                    div.card-body
+                                        h5.card-title
+                                        a.btn.btn-primary(href="#") BUY
+                                        p Provided by queen services
+                                
+        //- <!-- End Container -->
+        //- <!-- Footer -->
+        footer.container-fluid
+            div.row.pt-2(style="border-top: 1px solid rgba(0, 0, 0, .2); background-color: #ECEDED;")
+                div.col-sm-6.col-md-3.text-left
+                    h4 Company Links
+                    ul.nav flex-column
+                        li.nav-item
+                            a.nav-link.active(href="#") Active
+                    
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                div.col-sm-6.col-md-3.text-left
+                    h4 Our Policies
+                    ul.nav.flex-column
+                        li.nav-item
+                            a.nav-link.active(href="#")  Active
+                    
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                        
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                div.col-sm-6.col-md-3.text-left
+                    h4 Complaints
+                    ul.nav.flex-column
+                        li.nav-item
+                            a.nav-link.active(href="#") Active
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+                div.col-sm-6.col-md-3.text-left
+                    h4 Social Platforms
+                    ul.nav.flex-column
+                        li.nav-item
+                            a.nav-link.active(href="#") Active
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                        li.nav-item
+                            a.nav-link(href="#") Link
+                    
+   
+    //- <!-- End Footer -->
+
+    //- <!-- JS, Popper.js, and jQuery -->
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")
+
+

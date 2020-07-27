@@ -1,0 +1,57 @@
+extends layout
+block content
+    .col-md-6.offset-md-3
+        form(action="/" method="POST")
+
+            div.form-row
+                div.form-group.col-md-6
+                label(for="inputEmail4") Email
+                input.form-control#inputEmail4(type="email" name="email")
+            div.form-group    
+                div.form-group.col-md-6
+                label(for="inputPassword4") Password
+                input.form-control#inputPassword4(type="password" name="password")
+
+            div.form-group    
+                div.form-group.col-md-6
+                label(for="names") Names
+                input.form-control#inputNames(type="Names" name="Names")
+
+             div.form-group    
+                div.form-group.col-md-6
+                label(for="nationalId") National ID
+                input.form-control#inputNationalId(type="id" name="id")
+            salesagent/salesAgentRegister
+            div.form-group
+                label(for="inputAddress") Address
+                input.form-control#inputAddress(type="text" name="address" placeholder="1234 Main St")
+            
+            div.form-group
+                label(for="inputAddress2") Address 2
+                input.form-control#inputAddress2(type="text" name="address_2" placeholder="Apartment, studio, or floor")
+            
+            div.form-row
+                div.form-group.col-md-6
+                label(for="inputCity") City
+                input.form-control#inputCity(type="text" name="City") 
+                
+                div.form-group.col-md-4
+                label(for="inputState") State
+                select.form-control#inputState(name="state")
+                    option(selected disabled)  Choose
+                    option(value="kampala") kampala
+                    option(value="jinja") jinja
+                    option(value="mbarara") Mbarara
+
+                        
+                div.form-group.col-md-2
+                label(for="inputZip") Zip
+                input.form-control#inputZip(type="text" name="Zip") 
+                
+            div.form-group
+                div.form-check
+                input.form-check-input#gridCheck(type="checkbox")
+                label.form-check-label(for="gridCheck")
+                    | Remember me
+            
+            button.btn.btn-primary(type="submit") Sign in

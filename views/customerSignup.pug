@@ -1,0 +1,43 @@
+extends layout
+Block content
+
+    form.form-inline(action="/" method="POST")
+        label(for="fname") First Name
+        input.form-control(type="text"  placeholder="Enter name" name="fname")
+
+        label(for="Oname") Other Names
+        input.form-control.Oname(type="text"  placeholder="Enter names" name="Oname")
+
+        label(for="email") Email
+        input.form-control#email(type="email"  placeholder="Enter email" name="email")
+
+        label(for="street") Street
+        input.form-control.street(type="text"  name="street")
+
+        label(for="city") City
+        input.form-control(type="text" name="city")
+
+        label(for="occupation") Occupation
+        input.form-control.occupation(type="text" name="occupation")
+
+        label(for="companyName") Company Name
+        input.form-control(type="text" name="companyName")
+
+        label(for="companyId") Company ID
+        input.form-control(type="text" name="companyId")
+
+        label(for="nationalId") National ID
+        input.form-control.nationalId(type="text" name="nationalId")
+
+        label(for="tel") Telephone Number
+        input.form-control.tel(type="text" name="tel")
+
+
+        div.form-check
+            label.form-check-label
+            input.form-check-input(type="checkbox" name="remember") Remember me
+            
+        button.btn.btn-primary(type="submit") Submit
+        
+
+  

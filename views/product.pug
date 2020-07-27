@@ -1,0 +1,61 @@
+extends layout
+block content
+   
+    h1 PRODUCT REGISTRATION FORM
+    .container
+        form.productform(action="/product/add_product" enctype='multipart/form-data' method="POST" )
+            .col-mbp-6.mbt-3
+                label(for='name ') Product name:
+                br
+                input#name(type='text' name='name')
+
+            .col-mbp-6.mbt-3
+                label(for='product_picture') 
+                input(type='file' name='product_picture')
+            .col-mbp-6.mbt-3
+                label(for=' serial_number') Serial Number:
+                br
+                input#serial_number(type='text' name='serial_number')
+            .col-mbp-6.mbt-3
+                label(for='category') Category:
+                br
+                input#category(type='text' name ='category')
+                br
+            .col-mbp-6.mbt-3
+                label(for='quantity') Quantity:
+                br
+                input#quantity(type='text' name='quantity')
+                br
+            .col-mbp-6.mbt-3
+                label(for='price') Price:
+                br
+                input#price(type='text' name='price')
+                br
+            .col-mbp-6.mbt-3
+                label(for='entry_date') Entry Date:
+                br
+                input#entry_date(type='date' name='date')
+                br
+            .col-mbp-6.mbt-3
+                label(for='size') Size:
+                br
+                input#size(type='text' name='size')
+                br
+            .col-mbp-6.mbt-3
+                label(for='color') Color:
+                br
+                input#color(type='text' name='color')
+                br
+            .col-mbp-6.mbt-3
+                label(for='description') Description:
+                br
+                textarea#description(type='text' name='description')
+                br
+            legend Payment Method
+            select#payment_method
+                option(value='card') Card
+                option(value='installments') Installments
+                option(value='cash') Cash
+            button(type='submit') Submit
+            
+                
